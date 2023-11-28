@@ -16,7 +16,7 @@ const volleyball = require("volleyball");
 const app: Application = express();
 
 // Set Cors Policy
-const whitelist: string[] = ['http://localhost:5173', 'http://localhost:5000'];
+const whitelist: string[] = ['http://localhost:3000', 'http://localhost:5000'];
 const corsOptions: CorsOptions = {
     origin: (origin: string, callback: (err: Error | null, allowed: boolean) => void) => {
         if (!origin || whitelist.includes(origin)) {
@@ -47,7 +47,7 @@ app.use('/api', router());
 // Redirect to Login
 app.get('/', async (req: Request, res: Response): Promise<any> => {
     console.log('redirect example');
-    // res.redirect('http://localhost:5173/...');
+    res.redirect('http://localhost:3000/');
 });
 
 // Unknown Route Error Handler
