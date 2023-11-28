@@ -109,11 +109,11 @@ function SignUp() {
             gender: yup.string().test('gender', 'Please enter gender', (value) => {
                 return value !== 'Select gender';
             }),
-            password: yup.string().required("Please enter password"),
-            // .min(8, "Pasword must be 8 characters")
-            // .max(8, "Pasword must be 8 characters")
-            // .matches(/(?=.*[a-z])(?=.*[A-Z])\w+/, "Password ahould contain at least one uppercase and lowercase character")
-            // .matches(/^0|[1-9]\d*$/, "Password must not contain special characters"),
+            password: yup.string().required("Please enter password")
+                .min(8, "Pasword must be 8 characters")
+                .max(8, "Pasword must be 8 characters")
+                .matches(/(?=.*[a-z])(?=.*[A-Z])\w+/, "Password ahould contain at least one uppercase and lowercase character")
+                .matches(/^0|[1-9]\d*$/, "Password must not contain special characters"),
             confirmPassword: yup.string().required("Please enter confirm password")
                 .oneOf([yup.ref('password'), null], "Passwords must match"),
             address: yup.string().required("Please enter address"),

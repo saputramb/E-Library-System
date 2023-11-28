@@ -104,10 +104,10 @@ function SignIn() {
             email: yup.string().required("Please enter email").email("Invalid email"),
             password: yup.string()
                 .required("Please enter password")
-            // .min(8, "Pasword must be 8 characters")
-            // .max(8, "Pasword must be 8 characters")
-            // .matches(/(?=.*[a-z])(?=.*[A-Z])\w+/, "Password ahould contain at least one uppercase and lowercase character")
-            // .matches(/^0|[1-9]\d*$/, "Password must not contain special characters")
+                .min(8, "Pasword must be 8 characters")
+                .max(8, "Pasword must be 8 characters")
+                .matches(/(?=.*[a-z])(?=.*[A-Z])\w+/, "Password ahould contain at least one uppercase and lowercase character")
+                .matches(/^0|[1-9]\d*$/, "Password must not contain special characters")
         }),
         validateOnBlur: true,
         validateOnChange: true,
