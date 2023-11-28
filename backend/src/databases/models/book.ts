@@ -53,7 +53,7 @@ export class book extends Model<bookAttributes, bookCreationAttributes> implemen
         allowNull: false
       },
       title: {
-        type: DataTypes.STRING(64),
+        type: DataTypes.TEXT,
         allowNull: false
       },
       author: {
