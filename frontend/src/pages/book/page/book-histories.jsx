@@ -17,12 +17,12 @@ function BookHistories() {
     const [data, setData] = useState([]);
     const [view, setView] = useState('');
 
-    const getBooksBorrowed = async () => {
+    const getBookHistories = async () => {
         try {
             let query = {};
             (role && role === 'admin') ? query = {} : query = { borrower: name }
             const response = client.GET({
-                url: '/api/book-borrowed',
+                url: '/api/history-book',
                 params: query
             });
             response.then((res) => {
@@ -46,7 +46,7 @@ function BookHistories() {
 
     useEffect(() => {
         getUsers();
-        getBooksBorrowed();
+        getBookHistories();
     }, []);
 
     const columns = [
