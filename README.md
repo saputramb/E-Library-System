@@ -16,13 +16,13 @@ https://github.com/saputramb/E-Library-System.git
 
 <img width="1280" alt="image" src="https://github.com/saputramb/E-Library-System/assets/53567782/e572378b-b473-4713-ba57-3255c0ab4a68">
 
--- Admin --
+-- Admin --__
 
 <img width="1280" alt="image" src="https://github.com/saputramb/E-Library-System/assets/53567782/24ab7c96-c39f-4ac4-9f14-51a3e94943e2">
 
 <img width="1280" alt="image" src="https://github.com/saputramb/E-Library-System/assets/53567782/af00b52c-a68d-402e-95a3-72f91c226cfc">
 
--- User --
+-- User --__
 
 <img width="1280" alt="image" src="https://github.com/saputramb/E-Library-System/assets/53567782/5820ed80-4af1-4c5d-9a8e-77a6864cf8fe">
 
