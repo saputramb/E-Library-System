@@ -30,7 +30,6 @@ client.interceptors.response.use(
             try {
                 const response = await axios.get('http://localhost:5000/api/refresh-token');
                 const { data } = response.data;
-                console.log('ini token cuk');
                 console.log(data);
 
                 localStorage.setItem('token', data);
